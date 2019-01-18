@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+# Build artefacts
+.vs/
+Debug/
+Release/
+
+# protobuf generated
+*.pb.cc
+*.pb.h
