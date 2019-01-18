@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message Request {
+	enum Command {
+		GET = 0;
+		SET = 1;
+	}
+
+	required Command command = 1;
+	required string variable = 2;
+	optional string value = 3;
+}
+
+message Response {
+	required bool state = 1;
+	optional string value = 2;	
+}
