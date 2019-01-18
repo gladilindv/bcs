@@ -8,6 +8,7 @@ BCS job contest
 
 Зависимости:
 * **Protocol Buffers v3.6.1** 
+* **MS redistributable**
 
 #### Windows
 
@@ -74,8 +75,13 @@ SETRT VARIABLE TIMEOUT
 
 Все события на серверной стороне пишутся в лог-файл `app.txt`, а обрабатываемые данные сохраняются в файл базы данных `app.db`.
 
+Установка пакетов от Microsoft
+------------
+При запуске приложения могут потребоваться распространяемые пакеты от Microsoft. Об этом могут свидетельствовать сообщения об отсутствии библиотек `msvcr*.dll` и `msvcp*.dll`. Необходимо [скачать](https://support.microsoft.com/ru-ru/help/2977003/the-latest-supported-visual-c-downloads) такие пакеты и установить в зависимости от разрядности сборки приложения (x86/x64).
+
 Дополнительно
 ------------
 * https://github.com/Microsoft/vcpkg
 * https://github.com/protocolbuffers/protobuf
 * https://www.sqlite.org/index.html
+* https://support.microsoft.com/ru-ru/help/2977003/the-latest-supported-visual-c-downloads
